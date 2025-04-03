@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center; /* Vertically centers content */
+    height: 100vh; /* Full viewport height */
+    padding-left: 50px; /* Adjust left padding as needed */
+}
+
+.info-section {
+    width: 50%; /* Adjust width as needed */
+    margin-left: 0; /* Ensures it stays on the left side */
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+.info-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.info-section h2 {
+    font-size: 24px;
+    color: #E0E1DD;
+}
+
+.info-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #A8B2C8;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* General form adjustments */
+form {
+    max-width: 600px; /* Control form width */
+    margin: 0 auto; /* Center the form */
+    padding: 10px;
+}
+
+label {
+    font-size: 14px; /* Reduce font size of labels */
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select, textarea {
+    width: 100%; /* Make the inputs take up full width */
+    padding: 8px; /* Smaller padding */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    width: 15px; /* Reduce size of radio buttons */
+    height: 15px;
+    margin-right: 5px;
+}
+
+fieldset {
+    border: none; /* Remove border from fieldset */
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 14px; /* Smaller font for legend */
+    margin-bottom: 5px;
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between radio buttons */
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Positioning the image */
+.your-image-class {
+    position: absolute; /* Use absolute positioning */
+    top: 20%;  /* Adjust this value to move the image vertically */
+    left: 30%; /* Adjust this value to move the image horizontally */
+    transform: translate(-50%, -50%); /* Centers the image */
+}

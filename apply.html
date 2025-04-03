@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - GettingIT Done</title>
+    <link rel="stylesheet" href="styles.css">
+    <img src="images/logoIT.png" alt="Description of the image" width="500" height="299" class="your-image-class">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section: Company Info -->
+        <div class="info-section">
+            <h2>Join Our Team at GettingIT Done</h2>
+            <p>We are looking for passionate individuals who want to make a difference in the IT industry. 
+               Apply now and be part of a company that values innovation and excellence.</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> careers@getitdone.com</p>
+                <p><strong>Phone:</strong> +123-456-7890</p>
+            </div>
+        </div>
+
+        <!-- Right Section: Job Application Form -->
+        <div class="form-section">
+            <form action="#" method="POST">
+                <!-- Section 1: Personal Details -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="job-ref">Job Reference Number:</label>
+                    <select name="job-ref" id="job-ref" required>
+                        <option value="" disabled selected>Select Job Reference</option>
+                        <option value="DEV101">DEV101 - Software Developer</option>
+                        <option value="CYB202">CYB202 - Cybersecurity Analyst</option>
+                        <option value="AI303">AI303 - AI Engineer</option>
+                    </select>
+
+                    <label for="name">First & Last Name:</label>
+                    <input type="text" id="name" name="name" maxlength="20" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY" required>
+
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+
+
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </fieldset>
+                </fieldset>
+
+                <!-- Section 2: Address Details -->
+                <fieldset>
+                    <legend>Address Details</legend>
+                    <label for="street">Street Address:</label>
+                    <input type="text" id="street" name="street" maxlength="40" required>
+
+                    <label for="suburb">Suburb:</label>
+                    <input type="text" id="suburb" name="suburb" maxlength="40" required>
+
+                    <label for="state">State:</label>
+                    <select name="state" id="state" required>
+                        <option value="" disabled selected>Select State</option>
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+
+                    <label for="postcode">Postcode:</label>
+                    <input type="text" id="postcode" name="postcode" pattern="\d{4}" required>
+                </fieldset>
+
+                <!-- Section 3: Contact & Skills -->
+                <fieldset>
+                    <legend>Contact & Skills</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" pattern="\d{8,12}" required>
+
+                    <label>Technical Skills:</label>
+                    <input type="checkbox" id="programming" name="skills" value="Programming">
+                    <label for="programming">Programming</label>
+                    <input type="checkbox" id="cloud" name="skills" value="Cloud Computing">
+                    <label for="cloud">Cloud Computing</label>
+                    <input type="checkbox" id="security" name="skills" value="Cybersecurity">
+                    <label for="security">Cybersecurity</label>
+                    <input type="checkbox" id="ai" name="skills" value="AI & Data Science">
+                    <label for="ai">AI & Data Science</label>
+
+                    <label for="other-skills">Other Skills:</label>
+                    <textarea id="other-skills" name="other-skills" rows="3"></textarea>
+                </fieldset>
+                
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
