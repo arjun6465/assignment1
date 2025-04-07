@@ -131,3 +131,28 @@
       z-index: 999;
     }
     
+
+    .job-page h1 {
+        font: small-caps bold 32px 'Segoe UI', sans-serif;
+      }
+      
+      .job-page aside {
+        width: 25%;
+        float: right;
+        border: 2px solid #4A90E2;
+        padding: 15px;
+        margin: 20px;
+        background-color: #f2f8ff;
+      }
+      
+      .job-page footer {
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        font-size: 0.75em;
+        padding: 10px 0;
+        clear: both;
+        position: relative;
+        bottom: 0;
+      }
