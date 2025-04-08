@@ -139,7 +139,7 @@
       .job-page aside {
         width: 25%;
         float: right;
-        border: 2px solid #4A90E2;
+        border: 2px solid #113a55;
         padding: 15px;
         margin: 20px;
         background-color: #f2f8ff;
@@ -170,7 +170,7 @@
       .job-page h1 {
         font: small-caps bold 36px 'Segoe UI', sans-serif;
         text-align: center;
-        color: #2c3e50;
+        color:  #113a55;
         margin-bottom: 40px;
         border-bottom: 3px solid #3498db;
         padding-bottom: 10px;
@@ -179,7 +179,7 @@
       /* === SECTION HEADINGS === */
       .job-page h2 {
         font-size: 28px;
-        color: #2980b9;
+        color: #113a55;
         border-left: 6px solid #2980b9;
         padding-left: 10px;
         margin-top: 40px;
@@ -225,17 +225,17 @@
       .job-page footer {
         clear: both;
         width: 100%;
-        background-color: #34495e;
+        background-color: #5191d1;
         color: #ecf0f1;
         text-align: center;
         font-size: 0.75em;
         padding: 15px 0;
         margin-top: 50px;
-        border-top: 4px solid #2c3e50;
+        border-top: 4px solid #3498db;
       }
 
       nav {
-        background-color: #2c3e50;
+        background-color:  #3498db;
         padding: 15px 0;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         margin-bottom: 30px;
@@ -263,8 +263,8 @@
       }
       
       nav a:hover {
-        color: #3498db;
-        border-bottom: 2px solid #3498db;
+        color: #074e7d;
+        border-bottom: 2px solid #06578d;
       }
 
       nav {
@@ -273,7 +273,37 @@
         left: 0;
         width: 100%;
         z-index: 1000;
-        background-color: #2c3e50;
+        background-color:  #3498db;
         padding: 15px 0;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
+
+      #email{
+        color:white;
+      }
+
+
+      .about-page {
+        font-family: 'Segoe UI', sans-serif;
+
+      }
+
+
+
+      .apply-button {
+        display: inline-block;
+        background-color: #3498db;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+      }
+      
+      .apply-button:hover {
+        background-color: #2980b9;
+      }
+
+      
