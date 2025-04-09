@@ -14,7 +14,8 @@
 
 
 
-    
+    /*Giving the body section of each page a nice background colour.
+    */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #fff;
@@ -22,6 +23,8 @@
       line-height: 1.6;
     }
     
+
+    /*Justify used to leave a space between the container items that are produced by the display; flex*/
     header {
       background-color: white;
       padding: 20px 40px;
@@ -31,115 +34,9 @@
       border-bottom: 2px solid #f0f0f0;
     }
     
-    nav a {
-      text-decoration: none;
-      color: #000;
-      margin: 0 15px;
-      font-weight: 600;
-      position: relative;
-    }
-    
-    nav a::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background-color: #FFD500;
-      left: 0;
-      bottom: -5px;
-      transition: width 0.3s;
-    }
-    
+   
     nav a:hover::after {
       width: 100%;
-    }
-    
-    / Hero Section /
-    .hero {
-      background-color: #FFD500;
-      padding: 80px 40px;
-      color: black;
-      text-align: center;
-    }
-    
-    .hero h1 {
-      font-size: 48px;
-      font-weight: 800;
-    }
-    
-    .hero span {
-      font-style: italic;
-      font-weight: 400;
-    }
-    
-   
-    .contact-section {
-      display: flex;
-      justify-content: space-around;
-      padding: 60px 40px;
-      background-color: #fff;
-      flex-wrap: wrap;
-    }
-    
-    .contact-card {
-      display: flex;
-      align-items: center;
-      margin: 15px;
-    }
-    
-    .contact-icon {
-      background-color: #FFD500;
-      border-radius: 50%;
-      padding: 15px;
-      margin-right: 15px;
-    }
-    
-    .contact-text {
-      font-weight: 700;
-    }
-    
-    / Careers Section /
-    .careers {
-      background-color: #FFD500;
-      padding: 80px 40px 20px;
-      text-align: center;
-    }
-    
-    .careers h2 {
-      font-size: 36px;
-      font-weight: 700;
-    }
-    
-    .careers h2 span {
-      font-style: italic;
-      font-weight: 400;
-    }
-    
-    / Careers Content /
-    .team-info {
-      padding: 60px 40px;
-      background-color: #fff;
-      text-align: center;
-    }
-    
-    .team-info h3 {
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    
-    .team-info p {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-    
-    .google-rating {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      z-index: 999;
     }
     
 
@@ -287,7 +184,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1000;
+    
         background-color:  #3498db;
         padding: 15px 0;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -297,6 +194,7 @@
         color:white;
       }
 
+      /*Johnny is the ID  for email link in about.html in the footer */
       #johnny{
         color:white;
       }
