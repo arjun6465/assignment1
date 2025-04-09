@@ -6,7 +6,14 @@
     <title>Job Application - Getting It Done</title>
     <link rel="stylesheet" href="styles.css"> 
     <img src="images/logoIT.png" alt="Description of the image" width="500" height="299" class="your-image-class">
-
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Job Descriptions</a></li>
+          <li><a href="apply.html">Apply</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
 </head>
 <body>
     <div class="container">
@@ -23,7 +30,7 @@
 
         <!-- Right Section: Job Application Form -->
         <div class="form-section">
-            <form action="#" method="POST">
+            <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">>
                 <!-- Section 1: Personal Details -->
                 <fieldset>
                     <legend>Personal Details</legend>
@@ -39,7 +46,7 @@
                     <input type="text" id="name" name="name" maxlength="20" required>
 
                     <label for="dob">Date of Birth:</label>
-                    <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY" required>
+                    <input type="text" name="DoB" id="Dob" placeholder="dd/mm/yyyy" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" required>
 
                     <fieldset>
                         <legend>Gender</legend>
