@@ -34,16 +34,18 @@
       border-bottom: 2px solid #f0f0f0;
     }
     
-   
+   /* */
     nav a:hover::after {
       width: 100%;
     }
     
-
+/* */
     .job-page h1 {
         font: small-caps bold 32px 'Segoe UI', sans-serif;
       }
       
+
+      /* */
       .job-page aside {
         width: 25%;
         float: right;
@@ -53,6 +55,8 @@
         background-color: #f2f8ff;
       }
       
+
+/* */
       .job-page footer {
         width: 100%;
         background-color: #222;
@@ -65,6 +69,9 @@
         bottom: 0;
       }
 
+
+
+/* */
       .job-page {
         font-family: 'Segoe UI', sans-serif;
         background-color: #f9fbfc;
@@ -74,7 +81,9 @@
         padding: 20px;
       }
       
-      /* === HEADER === */
+
+
+      /* */
       .job-page h1 {
         font: small-caps bold 36px 'Segoe UI', sans-serif;
         text-align: center;
@@ -84,7 +93,7 @@
         padding-bottom: 10px;
       }
       
-      /* === SECTION HEADINGS === */
+      /*  */
       .job-page h2 {
         font-size: 28px;
         color: #113a55;
@@ -93,7 +102,7 @@
         margin-top: 40px;
       }
       
-      /* === JOB CARDS === */
+      /* */
       .job-page section {
         background-color: #ffffff;
         border: 1px solid #dfe6e9;
@@ -103,20 +112,25 @@
         margin-bottom: 30px;
       }
       
-      /* === LISTS === */
+      /* */
       .job-page ul, .job-page ol {
         margin-left: 20px;
         margin-top: 10px;
       }
       
+
+      /* */
       .job-page ul li::marker {
         color: #3498db;
       }
+
+
+      /* */
       .job-page ol li::marker {
         color: #2ecc71;
       }
       
-      /* === ASIDE === */
+      /* */
       .job-page aside {
         width: 25%;
         float: right;
@@ -129,7 +143,7 @@
         color: #2c3e50;
       }
       
-      /* === FOOTER === */
+      /*  */
       .job-page footer {
         clear: both;
         width: 100%;
@@ -142,6 +156,8 @@
         border-top: 4px solid #3498db;
       }
 
+
+      /* */
       nav {
         background-color:  #3498db;
         padding: 15px 0;
@@ -149,6 +165,8 @@
         margin-bottom: 30px;
       }
       
+
+      /* */
       nav ul {
         list-style: none;
         display: flex;
@@ -157,10 +175,14 @@
         padding: 0;
       }
       
+
+      /* */
       nav li {
         margin: 0 20px;
       }
       
+
+      /* */
       nav a {
         text-decoration: none;
         color: #ecf0f1;
@@ -169,6 +191,9 @@
         transition: color 0.3s, border-bottom 0.3s;
         padding-bottom: 5px;
       }
+
+
+      /* */
       
       nav a:hover {
         color: #074e7d;
@@ -190,6 +215,7 @@
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
 
+      /* */
       #email{
         color:white;
       }
@@ -199,14 +225,14 @@
         color:white;
       }
 
-
+/* */
       .about-page {
         font-family: 'Segoe UI', sans-serif;
 
       }
 
 
-
+/* */
       .apply-button {
         display: inline-block;
         background-color: #3498db;
@@ -219,10 +245,16 @@
         margin-top: 15px;
       }
       
+
+
+      /* */
       .apply-button:hover {
         background-color: #2980b9;
       }
 
+
+
+      /* */
       footer {
         width: 100%;
         background-color: #3498db;
