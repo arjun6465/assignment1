@@ -24,7 +24,7 @@
     }
     
 
-    /*Justify used to leave a space between the container items that are produced by the display; flex*/
+    /*Justify-content used to leave a space between the container items that are produced by the display; flex*/
     header {
       background-color: white;
       padding: 20px 40px;
@@ -39,7 +39,7 @@
       width: 100%;
     }
     
-/* */
+/*gives the h1 in job page boldness in small caps while increasing its size to 32px and giving it a modern font */
     .job-page h1 {
         font: small-caps bold 32px 'Segoe UI', sans-serif;
       }
@@ -57,17 +57,7 @@
       
 
 /* */
-      .job-page footer {
-        width: 100%;
-        background-color: #222;
-        color: #fff;
-        text-align: center;
-        font-size: 0.75em;
-        padding: 10px 0;
-        clear: both;
-        position: relative;
-        bottom: 0;
-      }
+   
 
 
 
@@ -143,7 +133,9 @@
         color: #2c3e50;
       }
       
-      /*  */
+      /* We give the footer a nice blue background colour and using width: 100% we make sure it spans the enitre length of the bottom page
+      We align the text to the centre and make sure the text is slightly smaller by decreasing its font size
+       */
       .job-page footer {
         clear: both;
         width: 100%;
@@ -151,20 +143,11 @@
         color: #ecf0f1;
         text-align: center;
         font-size: 0.75em;
-        padding: 15px 0;
-        margin-top: 50px;
-        border-top: 4px solid #3498db;
+        border-top: 4px solid #041017;
       }
 
 
-      /* */
-      nav {
-        background-color:  #3498db;
-        padding: 15px 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin-bottom: 30px;
-      }
-      
+    
 
       /* */
       nav ul {
@@ -176,24 +159,29 @@
       }
       
 
-      /* */
+      /*creates 20 pixels space between each category in the navigation menu */
       nav li {
         margin: 0 20px;
       }
       
 
-      /* */
+      
+      /* By using text decoration we get rid of the underline of the link.
+      Tect is neautral white colour and set to BOLD so it is easily readable*/
+      
+      /*Main part of this is the transition code as it is used to give the navigation a much smoother feel.
+      It allows us to change the colour slightly after the menu is hovered over giving it a nice animation
+      */
       nav a {
         text-decoration: none;
         color: #ecf0f1;
         font-weight: bold;
         font-size: 16px;
         transition: color 0.3s, border-bottom 0.3s;
-        padding-bottom: 5px;
       }
 
 
-      /* */
+      /* Using nav a hover we can make the text in the nav section change colours to dark blue when hovered over*/
       
       nav a:hover {
         color: #074e7d;
@@ -215,17 +203,19 @@
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
 
-      /* */
+      /* giving the email in the footer an ID so we could change the colour to white*/
       #email{
+        text-decoration: none;
         color:white;
       }
 
       /*Johnny is the ID  for email link in about.html in the footer */
       #johnny{
+        text-decoration: none;
         color:white;
       }
 
-/* */
+        `/* */
       .about-page {
         font-family: 'Segoe UI', sans-serif;
 
@@ -268,5 +258,4 @@
       }
 
     
-      
       
