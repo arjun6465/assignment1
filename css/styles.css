@@ -55,19 +55,13 @@ nav a:hover::after {
       }
       
 
-      /* */
-      .job-page aside {
-        width: 25%;
-        float: right;
-        border: 2px solid #113a55;
-        padding: 15px;
-        margin: 20px;
-        background-color: #f2f8ff;
-      }
+     
+      
+      
       
 
 /* */
-   
+
 
 
 
@@ -125,14 +119,18 @@ nav a:hover::after {
       }
 
 
-      /* */
+      /*Gives the list in the list in the aside a green colour */
       .job-page ol li::marker {
         color: #2ecc71;
       }
       
-      /* */
+      /*Using CSS styling we made the aside look nice, 90% width spans it across most of the bottom of the page.
+      Float right sets the aside to the right side of the page.
+      The 2 pixel border creates a nice grey border for the aside to distinguish it.
+       by using border radius we can create the round edges of the box
+       using margins we can make sure the aside is not too far or too close to the bottom of the page*/
       .job-page aside {
-        width: 25%;
+        width: 90%;
         float: right;
         border: 2px solid #7f8c8d;
         border-radius: 10px;
