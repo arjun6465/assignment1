@@ -1,6 +1,10 @@
 
 
-/**/
+/* 
+  Responsive Styles for Tablets and Smaller Devices (≤768px)
+  - Makes the container take full width with smaller padding for narrow screens
+  - Reduces header font size for better mobile readability
+*/
 
 @media only screen and (max-width: 768px) {
     .container {
@@ -14,7 +18,7 @@
 
 
 
-    /*Giving the body section of each page a nice background colour.
+    /*Giving the body section of each page a nice background colour. this applies to all the pages
     */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,7 +38,13 @@
       border-bottom: 2px solid #f0f0f0;
     }
     
-   /* */
+/* 
+  Animate underline on navigation link hover
+*/
+nav a:hover::after {
+  width: 100%;
+}
+
     nav a:hover::after {
       width: 100%;
     }
@@ -149,7 +159,7 @@
 
     
 
-      /* */
+      /* this is applied to all the pages too */
       nav ul {
         list-style: none;
         display: flex;
@@ -209,20 +219,20 @@
         color:white;
       }
 
-      /*Johnny is the ID  for email link in about.html in the footer */
+      /*Johnny is the ID  for email link in about.html in the footer  Nash : im not sure what this is yet */
       #johnny{
         text-decoration: none;
         color:white;
       }
 
-        `/* */
+        /*  */
       .about-page {
         font-family: 'Segoe UI', sans-serif;
 
       }
 
 
-/* */
+/* Css Styling for Apply page */
       .apply-button {
         display: inline-block;
         background-color: #3498db;
@@ -237,7 +247,7 @@
       
 
 
-      /* */
+
       .apply-button:hover {
         background-color: #2980b9;
       }
