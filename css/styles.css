@@ -265,5 +265,78 @@ nav a:hover::after {
         bottom: 0;
       }
 
-    
-      
+      /* Add smooth hover effect to nav links */
+nav a {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+
+/* Style for the logo image */
+.Imagelogo {
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.Imagelogo:hover {
+  transform: scale(1.05);
+}
+
+/* Form field interactive styling */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0073e6;
+  box-shadow: 0 0 8px rgba(0, 115, 230, 0.3);
+}
+
+/* Button hover effect */
+button[type="submit"] {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #005bb5;
+  transform: scale(1.03);
+}
+
+/* Fade-in animation for fieldsets */
+fieldset {
+  animation: fadeIn 0.5s ease-in-out;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Simple fade-in keyframes */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
