@@ -566,8 +566,6 @@ nav a::after {
 }
 
 
-
-
 section h4 {
   text-align: center;
   margin-top: 30px;
@@ -580,5 +578,6 @@ section h4 {
   height: auto;
   display: block;
   margin: 15px auto 0 auto;
-
 }
+
+
