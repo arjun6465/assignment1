@@ -340,3 +340,126 @@ fieldset {
       transform: translateY(0);
   }
 }
+
+
+
+apply page css 
+.apply-page form {
+  background-color: #ffffff;
+  border: 1px solid #dfe6e9;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.apply-page label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #113a55;
+}
+
+.apply-page input,
+.apply-page select,
+.apply-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.apply-page button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-page button:hover {
+  background-color: #2980b9;
+}
+
+
+Job page section
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+
+.about-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fbfc;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* === HEADING === */
+.about-page h1 {
+  font: small-caps bold 36px 'Segoe UI', sans-serif;
+  text-align: center;
+  color: #113a55;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* === STUDENT ID === */
+.student-id {
+  text-align: right;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* === IMAGE STYLING === */
+.about-page figure {
+  float: right;
+  margin: 20px;
+}
+
+.about-page img {
+  border: 4px solid #3498db; /* shorthand border */
+  border-radius: 10px;
+  max-width: 250px;
+  height: auto;
+}
+
+/* === TABLE STYLING === */
+.about-page table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+}
+
+.about-page th {
+  font-weight: bold;
+  background-color: #ecf0f1;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+}
+
+.about-page td {
+  padding: 10px;
+  background-color: #f5f5f5; /* HEX colour */
+  border: 1px solid #dcdcdc;
+  transition: background-color 0.3s;
+}
+
+.about-page td:hover {
+  background-color: #e0f0ff; /* light blue on hover */
+}
+
+/* === CLEAR FLOATS === */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
