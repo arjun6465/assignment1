@@ -564,3 +564,21 @@ nav a::after {
   bottom: -5px;
   transition: width 0.3s;
 }
+
+
+
+
+section h4 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #113a55; /* Optional: matches the site theme */
+}
+
+#jira-image {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 15px auto 0 auto;
+
+}
