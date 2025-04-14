@@ -53,14 +53,6 @@ nav a:hover::after {
       }
       
 
-     
-      
-      
-      
-
-/* */
-
-
 
 
 /* */
@@ -191,7 +183,7 @@ nav a:hover::after {
       
       nav a:hover {
         color: #fffb05;
-        border-bottom: 2px solid #06578d;
+        border-bottom: 2px solid #064b7a;
       }
 
 
@@ -203,7 +195,7 @@ nav a:hover::after {
         top: 0;
         left: 0;
         width: 100%;
-    
+      z-index: 9999;
         background-color:  #3498db;
         padding: 15px 0;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -385,10 +377,6 @@ apply page css
 }
 
 
-Job page section
-box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-
-
 .about-page {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9fbfc;
@@ -554,6 +542,7 @@ box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   border-top: 4px solid #041017;
   padding: 20px 0;
 }
+
 nav a::after {
   content: "";
   position: absolute;
@@ -580,4 +569,52 @@ section h4 {
   margin: 15px auto 0 auto;
 }
 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.dropbtn {
+  background-color: #e3fc02;
+  color: rgb(16, 4, 248);
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropbtn:hover {
+  background-color: #e3fc02;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3498db;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 10px;
+  color: #e3fc02;
+  top: 110%;
+  left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content p {
+  margin: 8px 0;
+}
+
+.dropdown-container {
+  text-align: center;
+  margin-top: 30px;
+}
 
