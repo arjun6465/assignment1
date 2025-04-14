@@ -461,3 +461,106 @@ box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   display: table;
   clear: both;
 }
+
+.about-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fbfc;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Main heading */
+.about-page > header > h1 {
+  font: small-caps bold 36px 'Segoe UI', sans-serif;
+  text-align: center;
+  color: #113a55;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* Subheadings */
+.about-page h2 {
+  font-size: 28px;
+  color: #113a55;
+  text-align: center;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+/* Section box styling */
+.about-page section {
+  background-color: #ffffff;
+  border: 1px solid #dfe6e9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Lists inside sections */
+.about-page section ul,
+.about-page section ol {
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: #f2f8ff;
+  border: 1px solid #aec6cf;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.about-page li {
+  margin-bottom: 5px;
+}
+
+/* Table styling */
+.about-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  background-color: #ffffff;
+  border: 1px solid #dfe6e9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.about-page th, 
+.about-page td {
+  border: 1px solid #dfe6e9;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.about-page caption {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #113a55;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Footer styling */
+.about-page footer {
+  clear: both;
+  width: 100%;
+  background-color: #5191d1;
+  color: #ecf0f1;
+  text-align: center;
+  font-size: 0.75em;
+  border-top: 4px solid #041017;
+  padding: 20px 0;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #FFD500;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
