@@ -8,46 +8,51 @@
 
     <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Logo image (usually better placed in body/header) -->
-    <img src="images/logo.png" alt="Description of the image" width="500" height="299" class="Imagelogo">
-
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Job Descriptions</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </nav>
 </head>
 
 <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Getting IT Done Logo" class="nav-logo">
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Descriptions</a></li>
+                <li><a href="apply.html" class="active">Apply</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Main container for the page content -->
     <div class="container">
         
         <!-- Company introduction section -->
         <div class="info-section">
             <h2>Join Our Team at GettingIT Done</h2>
-            <p>We are looking for passionate individuals who want to make a difference in the IT industry. 
-            Apply now and be part of a company that values innovation and excellence.</p>
+            <p>At GettingIT Done, we are on a mission to empower businesses through technology. We believe in fostering talent, driving innovation, and building strong, inclusive teams. We are currently hiring for several exciting roles across software development, data analysis, cybersecurity, and cloud computing.</p>
+            <p>If you're driven by curiosity, eager to solve real-world problems, and committed to lifelong learning, we want to hear from you. Whether you're a seasoned professional or just starting your career in tech, there's a place for you at GettingIT Done.</p>
+            
             <div class="contact-info">
                 <p><strong>Email:</strong> careers@getitdone.com</p>
                 <p><strong>Phone:</strong> +04-668-084-443</p>
             </div>
         </div>
 
-        <!-- Job Application Form Section -->
-        <div class="form-section">
-            <!-- Form submission setup -->
-            <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-
+<!-- Job Application Form Section -->
+<div class="form-section">
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+        <div class="form-columns">
+            <!-- Left Column -->
+            <div class="form-column">
                 <!-- Personal Details Section -->
                 <fieldset>
                     <legend>Personal Details</legend>
-
-                    <!-- Dropdown to select job reference -->
                     <label for="job-ref">Job Reference Number:</label>
                     <select name="job-ref" id="job-ref" required>
                         <option value="" disabled selected>Select Job Reference</option>
@@ -57,40 +62,37 @@
                         <option value="AI303">403FR - Data Analyst</option>
                     </select>
 
-                    <!-- Name and date of birth -->
                     <label for="name">First & Last Name:</label>
                     <input type="text" id="name" name="name" maxlength="20" required>
 
                     <label for="dob">Date of Birth:</label>
-                    <input type="text" name="DoB" id="Dob" placeholder="dd/mm/yyyy" 
-                           pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" required>
+                    <input type="text" name="DoB" id="Dob" placeholder="dd/mm/yyyy" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" required>
 
-                    <!-- Gender selection using radio buttons -->
+                    <!-- Gender selection -->
                     <fieldset>
                         <legend>Gender</legend>
-                        <input type="radio" id="male" name="gender" value="Male" required>
-                        <label for="male">Male</label>
+                        <div class="gender-container">
+                            <input type="radio" id="male" name="gender" value="Male" required>
+                            <label for="male">Male</label>
 
-                        <input type="radio" id="female" name="gender" value="Female">
-                        <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
 
-                        <input type="radio" id="other" name="gender" value="Other">
-                        <label for="other">Other</label>
+                            <input type="radio" id="other" name="gender" value="Other">
+                            <label for="other">Other</label>
+                        </div>
                     </fieldset>
                 </fieldset>
 
                 <!-- Address Details Section -->
                 <fieldset>
                     <legend>Address Details</legend>
-
-                    <!-- User's address fields -->
                     <label for="street">Street Address:</label>
                     <input type="text" id="street" name="street" maxlength="40" required>
 
                     <label for="suburb">Suburb:</label>
                     <input type="text" id="suburb" name="suburb" maxlength="40" required>
 
-                    <!-- State and postcode -->
                     <label for="state">State:</label>
                     <select name="state" id="state" required>
                         <option value="" disabled selected>Select State</option>
@@ -107,12 +109,13 @@
                     <label for="postcode">Postcode:</label>
                     <input type="text" id="postcode" name="postcode" pattern="\d{4}" required>
                 </fieldset>
+            </div>
 
+            <!-- Right Column -->
+            <div class="form-column">
                 <!-- Contact & Skills Section -->
                 <fieldset>
                     <legend>Contact & Skills</legend>
-
-                    <!-- Contact info -->
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
@@ -120,31 +123,64 @@
                     <input type="text" id="phone" name="phone" pattern="\d{8,12}" required>
 
                     <!-- Skill checkboxes -->
-                    <label>Technical Skills:</label>
-                    <input type="checkbox" id="programming" name="skills" value="Programming">
-                    <label for="programming">Programming</label>
+                    <div class="skills-container">
+                        <label for="programming">Programming</label>
+                        <input type="checkbox" id="programming" name="skills" value="Programming">
 
-                    <input type="checkbox" id="cloud" name="skills" value="Cloud Computing">
-                    <label for="cloud">Cloud Computing</label>
+                        <label for="cloud">Cloud Computing</label>
+                        <input type="checkbox" id="cloud" name="skills" value="Cloud Computing">
 
-                    <input type="checkbox" id="security" name="skills" value="Cybersecurity">
-                    <label for="security">Cybersecurity</label>
+                        <label for="security">Cybersecurity</label>
+                        <input type="checkbox" id="security" name="skills" value="Cybersecurity">
 
-                    <input type="checkbox" id="ai" name="skills" value="AI & Data Science">
-                    <label for="ai">AI & Data Science</label>
+                        <label for="ai">AI & Data Science</label>
+                        <input type="checkbox" id="ai" name="skills" value="AI & Data Science">
 
-                    <!-- Text area for other skills -->
-                    <label for="other-skills">Other Skills:</label>
-                    <textarea id="other-skills" name="other-skills" rows="3"></textarea>
+                        <label for="other-skills">Other Skills:</label>
+                        <textarea id="other-skills" name="other-skills" rows="3"></textarea>
+
+                        <label for="resume-upload" class="upload-label">Upload Resume (PDF only):</label>
+                        <input type="file" id="resume-upload" name="resume-upload" accept=".pdf">
+                    </div>
                 </fieldset>
 
                 <!-- Submit Button -->
                 <button type="submit">Submit Application</button>
-            </form>
+            </div>
         </div>
+    </form>
+</div>
+
+    <!-- Footer Section -->
+    <div class="job-page">
+        <!-- Other content here -->
+        <footer>
+            <div class="footer-content">
+              <p><strong>Getting It Done</strong> acknowledges the Traditional Custodians of the lands on which we live and work. We pay our respects to Elders past, present, and emerging.</p>
+              
+              <div class="footer-socials">
+                <p>Connect with us:</p>
+                <ul>
+                  <li><a href="https://instagram.com/GettingItDone_AU" target="_blank">@GettingItDone_AU (Instagram)</a></li>
+                  <li><a href="https://facebook.com/GettingItDoneAU" target="_blank">Getting It Done (Facebook)</a></li>
+                  <li><a href="https://linkedin.com/company/getting-it-done-au" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://twitter.com/GettingItDoneAU" target="_blank">@GettingItDoneAU (Twitter/X)</a></li>
+                  <li><a href="https://youtube.com/@GettingItDoneAU" target="_blank">YouTube Channel</a></li>
+                </ul>
+              </div>
+          
+              <p>
+                Got questions? <a href="mailto:info@GettingItDone.com.au" id="email">Email us</a> or 
+                <a href="/contact-us.html" target="_blank">contact us via our online form</a>.
+              </p>
+          
+              <p>© 2025 Getting It Done | All rights reserved.</p>
+            </div>
+          </footer>
+          
     </div>
-    <footer>
-        <p> <a href="mailto:info@GettingItDone.com.au" id="email">info@GettingItDone.com.au</a> | © 2025 Tech Careers</p>
-    </footer>
+    
+    
+
 </body>
 </html>
