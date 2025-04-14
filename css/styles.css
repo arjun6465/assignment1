@@ -1,280 +1,241 @@
-/* 
-  Responsive Styles for Tablets and Smaller Devices (≤768px)
-  - Makes the container take full width with smaller padding for narrow screens
-  - Reduces header font size for better mobile readability
-*/
-
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-    .header {
-        font-size: 24px;
-    }
-}
-
-
-
-    /*Giving the body section of each page a nice background colour. this applies to all the pages
-    */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff;
-      color: #000;
-      line-height: 1.6;
-    }
-    
-
-    /*Justify-content used to leave a space between the container items that are produced by the display; flex*/
-    header {
-      background-color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #f0f0f0;
-    }
-    
-/* 
-  Animate underline on navigation link hover
-*/
-nav a:hover::after {
-  width: 100%;
-}
-
-    nav a:hover::after {
+ 
+ @media only screen and (max-width: 768px) {
+  .container {
       width: 100%;
-    }
-    
+      padding: 10px;
+  }
+  .header {
+      font-size: 24px;
+  }
+}
+
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+  }
+
+
+  /*Justify-content used to leave a space between the container items that are produced by the display; flex*/
+  header {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+/* Animate underline on navigation link hover*/
+nav a:hover::after {
+width: 100%;
+}
+
+  nav a:hover::after {
+    width: 100%;
+  }
+
 /*gives the h1 in job page boldness in small caps while increasing its size to 32px and giving it a modern font */
-    .job-page h1 {
-        font: small-caps bold 32px 'Segoe UI', sans-serif;
-      }
-      
-
-
+  .job-page h1 {
+      font: small-caps bold 32px 'Segoe UI', sans-serif;
+    }
 
 /* */
-      .job-page {
-        font-family: 'Segoe UI', sans-serif;
-        background-color: #f9fbfc;
-        color: #333;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      
+    .job-page {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fbfc;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
 
-      /* */
-      .job-page h1 {
-        font: small-caps bold 36px 'Segoe UI', sans-serif;
-        text-align: center;
-        color:  #113a55;
-        margin-bottom: 40px;
-        border-bottom: 3px solid #3498db;
-        padding-bottom: 10px;
-      }
-      
-      /*  */
-      .job-page h2 {
-        font-size: 28px;
-        color: #113a55;
-        border-left: 6px solid #2980b9;
-        padding-left: 10px;
-        margin-top: 40px;
-      }
-      
-      /* */
-      .job-page section {
-        background-color: #ffffff;
-        border: 1px solid #dfe6e9;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        padding: 20px;
-        margin-bottom: 30px;
-      }
-      
-      /* */
-      .job-page ul, .job-page ol {
-        margin-left: 20px;
-        margin-top: 10px;
-      }
-      
 
-      /* */
-      .job-page ul li::marker {
-        color: #3498db;
-      }
+    /* */
+    .job-page h1 {
+      font: small-caps bold 36px 'Segoe UI', sans-serif;
+      text-align: center;
+      color:  #113a55;
+      margin-bottom: 40px;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    /*  */
+    .job-page h2 {
+      font-size: 28px;
+      color: #113a55;
+      border-left: 6px solid #2980b9;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+
+    /* */
+    .job-page section {
+      background-color: #ffffff;
+      border: 1px solid #dfe6e9;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    /* */
+    .job-page ul, .job-page ol {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
 
 
-      /*Gives the list in the list in the aside a green colour */
-      .job-page ol li::marker {
-        color: #2ecc71;
-      }
-      
-      /*Using CSS styling we made the aside look nice, 90% width spans it across most of the bottom of the page.
-      Float right sets the aside to the right side of the page.
-      The 2 pixel border creates a nice grey border for the aside to distinguish it.
-       by using border radius we can create the round edges of the box
-       using margins we can make sure the aside is not too far or too close to the bottom of the page*/
-      .job-page aside {
-        width: 90%;
-        float: right;
-        border: 2px solid #7f8c8d;
-        border-radius: 10px;
-        padding: 15px;
-        margin-left: 30px;
-        margin-bottom: 30px;
-        background-color: #ecf0f1;
-        color: #2c3e50;
-      }
-      
-      /* We give the footer a nice blue background colour and using width: 100% we make sure it spans the enitre length of the bottom page
-      We align the text to the centre and make sure the text is slightly smaller by decreasing its font size
-       */
-      .job-page footer {
-        clear: both;
-        width: 100%;
-        background-color: #5191d1;
-        color: #ecf0f1;
-        text-align: center;
-        font-size: 0.75em;
-        border-top: 4px solid #041017;
-      }
+    /* */
+    .job-page ul li::marker {
+      color: #3498db;
+    }
 
+
+    /*Gives the list in the list in the aside a green colour */
+    .job-page ol li::marker {
+      color: #2ecc71;
+    }
+
+    /*Using CSS styling we made the aside look nice, 90% width spans it across most of the bottom of the page.
+    Float right sets the aside to the right side of the page.
+    The 2 pixel border creates a nice grey border for the aside to distinguish it.
+     by using border radius we can create the round edges of the box
+     using margins we can make sure the aside is not too far or too close to the bottom of the page*/
+    .job-page aside {
+      width: 90%;
+      float: right;
+      border: 2px solid #7f8c8d;
+      border-radius: 10px;
+      padding: 15px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+      background-color: #ecf0f1;
+      color: #2c3e50;
+    }
 
     
 
-      /* this is applied to all the pages too */
-      nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-      }
-      
 
-      /*creates 20 pixels space between each category in the navigation menu */
-      nav li {
-        margin: 0 20px;
-      }
-      
-
-      
-      /* By using text decoration we get rid of the underline of the link.
-      Tect is neautral white colour and set to BOLD so it is easily readable*/
-      
-      /*Main part of this is the transition code as it is used to give the navigation a much smoother feel.
-      It allows us to change the colour slightly after the menu is hovered over giving it a nice animation
-      */
-      nav a {
-        text-decoration: none;
-        color: #ecf0f1;
-        font-weight: bold;
-        font-size: 16px;
-        transition: color 0.3s, border-bottom 0.3s;
-      }
+    /* this is applied to all the pages too !IMPORTANT!*/
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
 
 
-      /* Using nav a hover we can make the text in the nav section change colours to dark blue when hovered over*/
-      
-      nav a:hover {
-        color: #fffb05;
-        border-bottom: 2px solid #064b7a;
-      }
+    /*creates 20 pixels space between each category in the navigation menu */
+    nav li {
+      margin: 0 20px;
+    }
 
 
 
-      /*we wanted to have the menu bar fixed to the top but didnt know how so we asked chatgpt
-      "in html how do we keep a menu bar fixed to the top of the page even as we scroll down and up the page"*/
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-      z-index: 9999;
-        background-color:  #3498db;
-        padding: 15px 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      }
+    /* By using text decoration we get rid of the underline of the link.
+    Tect is neautral white colour and set to BOLD so it is easily readable*/
 
-      /* giving the email in the footer an ID so we could change the colour to white*/
-      #email{
-        text-decoration: none;
-        color:white;
-      }
+    /*Main part of this is the transition code as it is used to give the navigation a much smoother feel.
+    It allows us to change the colour slightly after the menu is hovered over giving it a nice animation
+    */
+    nav a {
+      text-decoration: none;
+      color: #ecf0f1;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
 
-      /*Johnny is the ID  for email link in about.html in the footer  Nash : im not sure what this is yet */
-      #johnny{
-        text-decoration: none;
-        color:white;
-      }
 
-        /*  */
-      .about-page {
-        font-family: 'Segoe UI', sans-serif;
+    /* Using nav a hover we can make the text in the nav section change colours to dark blue when hovered over*/
 
-      }
+    nav a:hover {
+      color: #fffb05;
+      border-bottom: 2px solid #06578d;
+      border-bottom: 2px solid #064b7a;
+    }
+
+
+
+    /*we wanted to have the menu bar fixed to the top but didnt know how so we asked chatgpt
+    "in html how do we keep a menu bar fixed to the top of the page even as we scroll down and up the page"*/
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+  
+    z-index: 9999;
+      background-color:  #3498db;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* giving the email in the footer an ID so we could change the colour to white*/
+    #email{
+      text-decoration: none;
+      color:white;
+    }
+
+      /*  */
+    .about-page {
+      font-family: 'Segoe UI', sans-serif;
+
+    }
 
 
 /* Css Styling for Apply page */
-      .apply-button {
-        display: inline-block;
-        background-color: #3498db;
-        color: white;
-        padding: 12px 20px;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        margin-top: 15px;
-      }
-      
+    .apply-button {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 15px;
+    }
 
 
 
-      .apply-button:hover {
-        background-color: #2980b9;
-      }
+
+    .apply-button:hover {
+      background-color: #2980b9;
+    }
 
 
 
-      /* */
-      footer {
-        width: 100%;
-        background-color: #3498db;
-        color: #ecf0f1;
-        text-align: center;
-        font-size: 0.75em;
-        padding: 15px 0;
-        border-top: 4px solid #2c3e50;
-        position: relative; 
-        bottom: 0;
-      }
+    /*  We give the footer a nice blue background colour and using width: 100% we make sure it spans the enitre length of the bottom page
+    We align the text to the centre and make sure the text is slightly smaller by decreasing its font size
+     */
+    footer {
+      width: 100%;
+      background-color: #3498db;
+      color: #ecf0f1;
+      text-align: center;
+      font-size: 0.75em;
+      padding: 15px 0;
+      border-top: 4px solid #2c3e50;
+      position: relative; 
+      bottom: 0;
+    }
 
-      /* Add smooth hover effect to nav links */
+    /* Add smooth hover effect to nav links */
 nav a {
-  transition: background-color 0.3s ease, transform 0.2s ease;
+transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
-  background-color: #005bb5;
-  transform: scale(1.05);
-  border-radius: 5px;
-}
-
-/* Style for the logo image */
-.Imagelogo {
-  display: block;
-  margin: 20px auto;
-  transition: transform 0.3s ease;
-}
-
-.Imagelogo:hover {
-  transform: scale(1.05);
+background-color: #005bb5;
+transform: scale(1.05);
+border-radius: 5px;
 }
 
 /* Form field interactive styling */
@@ -283,244 +244,479 @@ input[type="email"],
 input[type="date"],
 select,
 textarea {
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #0073e6;
-  box-shadow: 0 0 8px rgba(0, 115, 230, 0.3);
+border-color: #0073e6;
+box-shadow: 0 0 8px rgba(0, 115, 230, 0.3);
 }
 
 /* Button hover effect */
 button[type="submit"] {
-  background-color: #0073e6;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+background-color: #0073e6;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button[type="submit"]:hover {
-  background-color: #005bb5;
-  transform: scale(1.03);
+background-color: #005bb5;
+transform: scale(1.03);
 }
 
-/* Fade-in animation for fieldsets */
+/* Fade-in animation */
 fieldset {
-  animation: fadeIn 0.5s ease-in-out;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
+animation: fadeIn 0.5s ease-in-out;
+border-radius: 8px;
+border: 1px solid #ccc;
+padding: 20px;
+margin-bottom: 20px;
 }
 
 /* Simple fade-in keyframes */
 @keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(15px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+from {
+    opacity: 0;
+    transform: translateY(15px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
 }
 
-
-
-apply page css 
-.apply-page form {
-  background-color: #ffffff;
-  border: 1px solid #dfe6e9;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  margin-bottom: 30px;
+/* THIS IS NASH NEW APPLY PAGE FONT AND LAYERING IM NOT SURE HOW ITS GONNA LOOK YET WE NEED TO FIX THIS LATER  */
+/* Navigation links */
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.apply-page label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: #113a55;
-}
-
-.apply-page input,
-.apply-page select,
-.apply-page textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-.apply-page button {
-  background-color: #3498db;
+/* Hover effect for links */
+nav a:hover {
+  background-color: #005bb5;
   color: white;
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  transform: scale(1.05);
+  border-radius: 5px;
 }
 
-.apply-page button:hover {
-  background-color: #2980b9;
+/* Navigation logo styling */
+.nav-logo {
+  height: 100px;
+  width: auto;
 }
 
+nav li {
+  margin: 0;
+}
 
-.about-page {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9fbfc;
-  color: #333;
+.container {
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-/* === HEADING === */
-.about-page h1 {
-  font: small-caps bold 36px 'Segoe UI', sans-serif;
+/* this is for the company introduction  */
+.info-section {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #113a55;
-  margin-bottom: 40px;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 10px;
 }
 
-/* === STUDENT ID === */
-.student-id {
-  text-align: right;
+.info-section h2 {
+  font-size: 2.5em;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.info-section .contact-info {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 30px;
+}
+
+.info-section .contact-info p {
+  margin: 10px 0;
+}
+
+.info-section .contact-info strong {
+  color: #005bb5;
+}
+
+@media screen and (max-width: 768px) {
+  .info-section {
+    padding: 20px;
+  }
+  .info-section h2 {
+    font-size: 2em;
+  }
+  .info-section p {
+    font-size: 1.1em;
+  }
+  .info-section .contact-info p {
+    font-size: 1em;
+  }
+}
+
+.form-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-section h2 {
+  font-size: 2.5em;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+legend {
+  font-size: 1.4em;
   font-weight: bold;
-  color: #2c3e50;
+  color: #005bb5;
+  padding: 0 10px;
+}
+
+label {
+  font-size: 1.1em;
+  color: #333;
+  display: block;
   margin-bottom: 10px;
 }
 
-/* === IMAGE STYLING === */
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"], input[type="number"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  margin: 8px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+  border-color: #005bb5;
+  outline: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #005bb5;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px 0 0 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #0047a3;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .form-section {
+    padding: 20px;
+  }
+  
+  .form-section h2 {
+    font-size: 2em;
+  }
+  
+  fieldset {
+    padding: 15px;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"], input[type="number"], select, textarea {
+    font-size: 1em;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.skills-container label {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.skills-container input[type="checkbox"] {
+  margin-right: 5px; 
+}
+
+.skills-container textarea {
+  display: inline-block;
+  width: 250px; /* Adjust width as per requirement */
+  margin-top: 10px; /* Space above the textarea */
+}
+
+/* Style for gender radio buttons */
+.gender-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between radio buttons */
+}
+
+.gender-container label {
+  display: inline-block;
+  margin-right: 10px; /* Space between radio button and label */
+}
+
+.gender-container input[type="radio"] {
+  margin-right: 5px; /* Space between radio button and label */
+}
+/* Style for the file upload button */
+.upload-label {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#resume-upload {
+  display: inline-block;
+  background-color: #005bb5;
+  color: white;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the background color on hover */
+#resume-upload:hover {
+  background-color: #0047a3;
+}
+
+/* Style the textarea for better presentation */
+textarea {
+  width: calc(100% - 170px); /* Adjust width to make space for the button */
+  display: inline-block;
+}
+
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.upload-label {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #005bb5; /* Accent color */
+}
+
+.upload-label:hover {
+  color: #0047a3; /* Darker accent on hover */
+}
+
+/* Style for the file upload button */
+.upload-label {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#resume-upload {
+  display: none; /* Hide the default file input */
+}
+
+/* Style for the custom label that works as the file upload button */
+.upload-label {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #005bb5; /* Accent color */
+}
+
+.upload-label:hover {
+  color: #0047a3; /* Darker accent on hover */
+}
+
+
+
+
+.job-page footer {
+  clear: both;
+  width: 100%;
+  background-color: #5191d1;
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 0.85em;
+  border-top: 4px solid #041017;
+  padding: 2em 1em;
+  line-height: 1.6;
+}
+
+.job-page footer .footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.job-page footer a {
+  color: #ecf0f1;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.job-page footer a:hover {
+  text-decoration: underline;
+  color: #dcdde1;
+}
+
+.job-page footer .footer-socials ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5em 0 1em;
+}
+
+.job-page footer .footer-socials ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+
+
+
+.form-columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .form-columns {
+      flex-direction: column;
+  }
+}
+
+
+
+.about-page {
+font-family: 'Segoe UI', sans-serif;
+background-color: #f9fbfc;
+color: #333;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+
+.about-page h1 {
+font: small-caps bold 36px 'Segoe UI', sans-serif;
+text-align: center;
+color: #113a55;
+margin-bottom: 40px;
+border-bottom: 3px solid #3498db;
+padding-bottom: 10px;
+}
+
+
+.student-id {
+text-align: right;
+font-weight: bold;
+color: #2c3e50;
+margin-bottom: 10px;
+}
+
+
 .about-page figure {
-  float: right;
-  margin: 20px;
+float: right;
+margin: 20px;
 }
 
 .about-page img {
-  border: 4px solid #3498db; /* shorthand border */
-  border-radius: 10px;
+border: 4px solid #3498db; 
+border-radius: 10px;
+max-width: 250px;
+height: auto;
+}
+
+#groupPhoto {
+  display: block;
+  margin: 20px auto;
   max-width: 250px;
   height: auto;
-}
-
-/* === TABLE STYLING === */
-.about-page table {
-  margin: 30px auto;
-  border-collapse: collapse;
-  width: 80%;
-  text-align: center;
-}
-
-.about-page th {
-  font-weight: bold;
-  background-color: #ecf0f1;
-  padding: 12px;
-  border: 1px solid #bdc3c7;
-}
-
-.about-page td {
-  padding: 10px;
-  background-color: #f5f5f5; /* HEX colour */
-  border: 1px solid #dcdcdc;
-  transition: background-color 0.3s;
-}
-
-.about-page td:hover {
-  background-color: #e0f0ff; /* light blue on hover */
-}
-
-/* === CLEAR FLOATS === */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.about-page {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9fbfc;
-  color: #333;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Main heading */
-.about-page > header > h1 {
-  font: small-caps bold 36px 'Segoe UI', sans-serif;
-  text-align: center;
-  color: #113a55;
-  margin-bottom: 40px;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 10px;
-}
-
-/* Subheadings */
-.about-page h2 {
-  font-size: 28px;
-  color: #113a55;
-  text-align: center;
-  border-bottom: 2px solid #2980b9;
-  padding-bottom: 5px;
-  margin-top: 40px;
-}
-
-/* Section box styling */
-.about-page section {
-  background-color: #ffffff;
-  border: 1px solid #dfe6e9;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  padding: 20px;
-  margin-bottom: 30px;
-}
-
-/* Lists inside sections */
-.about-page section ul,
-.about-page section ol {
-  margin-left: 20px;
-  margin-top: 10px;
-  background-color: #f2f8ff;
-  border: 1px solid #aec6cf;
-  border-radius: 8px;
-  padding: 15px;
-}
-
-.about-page li {
-  margin-bottom: 5px;
-}
-
-/* Table styling */
-.about-page table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 40px;
-  background-color: #ffffff;
-  border: 1px solid #dfe6e9;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.about-page th, 
-.about-page td {
-  border: 1px solid #dfe6e9;
-  padding: 12px;
-  text-align: left;
-  vertical-align: top;
 }
 
 .about-page caption {
@@ -531,90 +727,199 @@ apply page css
   text-align: center;
 }
 
-/* Footer styling */
-.about-page footer {
-  clear: both;
+
+/* Table styling */
+table {
   width: 100%;
-  background-color: #5191d1;
-  color: #ecf0f1;
-  text-align: center;
-  font-size: 0.75em;
-  border-top: 4px solid #041017;
-  padding: 20px 0;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #fefefe;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Table header styling */
+table thead {
+  background-color: #3498db;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Hover effect for table rows */
+table tbody tr:hover {
+  background-color: #f0f8ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Caption styling */
+table caption {
+  caption-side: top;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #113a55;
+}
+
+
+.about-page {
+font-family: 'Segoe UI', sans-serif;
+background-color: #f9fbfc;
+color: #333;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+
+.about-page > header > h1 {
+font: small-caps bold 36px 'Segoe UI', sans-serif;
+text-align: center;
+color: #113a55;
+margin-bottom: 40px;
+border-bottom: 3px solid #3498db;
+padding-bottom: 10px;
+}
+
+
+.about-page h2 {
+font-size: 28px;
+color: #113a55;
+text-align: center;
+border-bottom: 2px solid #2980b9;
+padding-bottom: 5px;
+margin-top: 40px;
+}
+
+.about-page section {
+background-color: #ffffff;
+border: 1px solid #dfe6e9;
+border-radius: 10px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+padding: 20px;
+margin-bottom: 30px;
+}
+
+
+
+.about-page caption {
+font-size: 20px;
+margin-bottom: 15px;
+color: #113a55;
+font-weight: bold;
+text-align: center;
+}
+
+
+.about-page footer {
+clear: both;
+width: 100%;
+background-color: #5191d1;
+color: #ecf0f1;
+text-align: center;
+font-size: 0.75em;
+border-top: 4px solid #041017;
+padding: 20px 0;
+}
+
+
+/* this is a cool underline effect that was added for the navigation bar when selected  */
 nav a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: #FFD500;
-  left: 0;
-  bottom: -5px;
-  transition: width 0.3s;
+content: "";
+position: absolute;
+width: 0;
+height: 2px;
+background-color: #FFD500;
+left: 0;
+bottom: -5px;
+transition: width 0.3s;
 }
 
 
 section h4 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 20px;
-  color: #113a55; /* Optional: matches the site theme */
+text-align: center;
+margin-top: 30px;
+font-size: 20px;
+color: #113a55; 
 }
 
 #jira-image {
-  width: 20%;
-  height: auto;
-  display: block;
-  margin: 15px auto 0 auto;
+width: 20%;
+height: auto;
+display: block;
+margin: 15px auto 0 auto;
 }
 
 
 .dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
+position: relative;
+display: inline-block;
+margin: 20px;
 }
 
 .dropbtn {
-  background-color: #e3fc02;
-  color: rgb(16, 4, 248);
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+background-color: #e3fc02;
+color: rgb(16, 4, 248);
+padding: 12px 20px;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s;
 }
 
 .dropbtn:hover {
-  background-color: #e3fc02;
+background-color: #e3fc02;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #3498db;
-  min-width: 220px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-  border-radius: 10px;
-  color: #2d0075;
-  top: 110%;
-  left: 0;
+display: none;
+position: absolute;
+background-color: #094973;
+min-width: 220px;
+box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+border-radius: 10px;
+color: #e3fc02;
+top: 110%;
+left: 0;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+display: block;
 }
 
 .dropdown-content p {
-  margin: 8px 0;
+margin: 8px 0;
 }
 
-.dropdown-container {
-  text-align: center;
-  margin-top: 30px;
+
+
+.index-page section {
+  background: #fff;
+  border: 1px solid #dfe6e9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
+/* this is to ensure the header is centered like in jobs.html */
+.job-page header {
+  text-align: center; 
+  margin: 0 auto; 
+  padding: 20px 0; 
+}
+
+.job-page h1 {
+  text-align: center; 
+  margin: 0 auto; 
+  display: block; 
+}
